@@ -15,6 +15,7 @@ namespace CSharpIntro8Nov2024
         {
 
             DlgDemo fptr = new DlgDemo(MathFunc.Add); // 1.0
+
             fptr += MathFunc.Multi;  // 2.0 DTI
 
             fptr += delegate (int x, int y) // 2.0 Anonymous Block/Method 
