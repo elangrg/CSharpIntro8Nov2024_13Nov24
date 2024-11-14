@@ -122,12 +122,12 @@ namespace CSharpIntro8Nov2024
         public string EmpName;
         public string Address;
 
-        //public Employee()
-        //{
-        //    EmpID = 0;
-        //    EmpName = "";
-        //    Address = "";
-        //}
+        public Employee()
+        {
+            EmpID = 0;
+            EmpName = "";
+            Address = "";
+        }
 
         public Employee(int _empid, string EmpName)//:this()
         {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -35,6 +36,12 @@ namespace CSharpIntro8Nov2024
 
             fptr += (x, y) =>  x + y;   // 3.0 Anonymous Block/Method  ->2
             
+
+            Func<int,int,int> fptr1= (x, y) => x + y; // 3.0 [4 overloads] in 4.0 onwards [17 overloads]
+Console.WriteLine( fptr1(100,200) );
+            
+            Action<string> fptr2 = (m) => { Console.WriteLine(m); };
+            fptr2("Hello Action");
 
 
             Console.WriteLine(  fptr(100,200) );

@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpIntro8Nov2024.GenericDemo</StartupObject>
+    <StartupObject>CSharpIntro8Nov2024.DelegateDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
