@@ -92,9 +92,33 @@ namespace CSharpIntro8Nov2024
             }
 
 
+
+            // iterator Example - 2.0
+
+            foreach (var item in GetNames(true))
+            {
+                Console.WriteLine(  item);
+            }
+
+
+
             Console.ReadKey();
        }
 
+
+        static IEnumerable GetNames(bool allVals=false)
+        {
+            yield return "Ganesh";
+            yield return "Mahesh";
+            yield return "Dinesh";
+
+            if (allVals == false) yield break;
+
+            yield return "Amaresh";
+            yield return "Suresh";
+
+
+        }
 
     }
     // problem

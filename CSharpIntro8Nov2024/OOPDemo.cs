@@ -139,10 +139,10 @@ namespace CSharpIntro8Nov2024
         {
             Address = _address;
         }
-        public override string ToString()
-        {
-            return $"Emp ID :{EmpID}, Emp Name: {EmpName}, Address: {Address} ";
-        }
+        //public override string ToString()
+        //{
+        //    return $"Emp ID :{EmpID}, Emp Name: {EmpName}, Address: {Address} ";
+        //}
 
 
     }
