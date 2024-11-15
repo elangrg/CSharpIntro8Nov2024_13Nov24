@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharpIntro8Nov2024.DelegateDemo</StartupObject>
+    <StartupObject>CSharpIntro8Nov2024.CollectionDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CollectionDemo.cs" />
     <Compile Include="DelegateDemo.cs" />
     <Compile Include="GenericDemo.cs" />
     <Compile Include="MethodFeatures.cs" />
