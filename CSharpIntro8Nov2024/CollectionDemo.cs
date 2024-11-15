@@ -85,6 +85,13 @@ namespace CSharpIntro8Nov2024
             }
 
 
+
+            foreach (var item in new StringEnumerable())
+            {
+                Console.WriteLine(  item);
+            }
+
+
             Console.ReadKey();
        }
 
@@ -108,4 +115,56 @@ namespace CSharpIntro8Nov2024
         }
 
     }
+
+
+
+    class StringEnumerable : IEnumerable
+    {
+        public IEnumerator GetEnumerator()
+        {
+            return   new StringEnumerator(new List<string> { "Ganesh", "Mahesh", "Dinesh" }); 
+        }
+    }
+
+
+    class StringEnumerator : IEnumerator
+    {
+        List<string> _data;
+
+        int index = -1;
+
+        public StringEnumerator(List<string> data)
+        {
+                _data = data;
+        }
+
+
+        
+
+        public object Current
+        {
+            get { return _data[index]; }
+           
+        }
+
+
+        public bool MoveNext()
+        {
+            index++;
+
+            if (index >= _data.Count) {return false; }
+                
+
+            return true;
+
+
+        }
+
+        public void Reset()
+        {
+            index = -1;
+        }
+    }
+
+
 }
